@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar</title>
+    <script type="text/javascript" src="cobajquery.js"></script>
+</head>
+<body>
+    <img id="image" src="panda.png" width="50%" height="20%"/><br>
+    <button onclick="changeimage('panda.png')">Klik gambar 1</button>
+    <button onclick="changeimage('panda2.jpeg', 'panda3.png', 'panda4.jpeg')">Klik gambar 3</button>
+    <script>
+        function changeimage(filename){
+            let img = document.querySelector("#image");
+            img.setAttribute("src", filename);
+        }
+    </script>
+</body>
+</html>
